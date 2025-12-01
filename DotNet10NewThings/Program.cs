@@ -54,5 +54,6 @@ var savings = new Money("USD", 100);
 var total = cheque + savings;
 total += new Money("USD", 10);
 Console.WriteLine(total);
-
+int value =Converter.StringToInt("12345");
+Console.WriteLine(value);
 Console.ReadLine();
