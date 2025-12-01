@@ -31,9 +31,28 @@ letterGarde = numberGrade switch
     >= 80 => "B",
     >= 70 => "C",
     >= 60 => "D",
-    _ => "F"
+    _ => "F"  // else or default
 };
 Console.WriteLine($"letterGarde:{letterGarde}");
+List<int> numbers1 = [1, 2, 3, 4, 5];
+
+
+List<int> numbers2 = [ 6, 7, 8, 9, 10 ];
+
+// Concatenate two enumerables into a single one using the operator extension
+var combinedList = numbers1 + numbers2;
+Console.WriteLine($"numbers1 + numbers2 is");
+foreach (var number in combinedList)
+{
+    Console.WriteLine(number);
+}
+List<int> numbres3 = [];
+Console.WriteLine(numbres3.FirstOrFallback(0));
+
+var cheque = new Money("USD", 200);
+var savings = new Money("USD", 100);
+var total = cheque + savings;
+total += new Money("USD", 10);
+Console.WriteLine(total);
 
 Console.ReadLine();
-
