@@ -1,2 +1,25 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+
+using DotNet10NewThings;
+
+// Extention members
+
+var numbers = new List<int>() { 1, 2, 3, 4, 5 };
+var results = numbers.WhereGreaterThan(4);
+foreach (var item in results)
+{
+    Console.WriteLine(item);
+}
+Console.WriteLine($"Is Empty : {numbers.IsEmpty}");
+
+// field keyword
+//var person1 = new Person() { Name =null , Age = 0};
+// Null-Conditional Assignment
+Person person2 = new() { Name = "John Doe", Age = 33 };
+person2?.Address = "Manhattan"; // Only if person2 isn't null
+person2?.Name = "Parsa"; // Only if person2 isn't null
+person2?.Age = 21; // Only if person2 isn't null
+Console.WriteLine($"Name:{person2?.Name}, Age:{person2?.Age}, Address:{person2?.Address}");
+
+Console.ReadLine();
+
