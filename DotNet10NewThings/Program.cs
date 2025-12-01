@@ -19,7 +19,8 @@ Person person2 = new() { Name = "John Doe", Age = 33 };
 person2?.Address = "Manhattan"; // Only if person2 isn't null
 person2?.Name = "Parsa"; // Only if person2 isn't null
 person2?.Age = 21; // Only if person2 isn't null
-Console.WriteLine($"Name:{person2?.Name}, Age:{person2?.Age}, Address:{person2?.Address}");
-
+// Compound Assignments Supported
+person2?.Weight += 81.5; // Only if person2 isn't null
+Console.WriteLine($"Name:{person2?.Name}, Age:{person2?.Age}, Address:{person2?.Address}, Weight:{person2?.Weight}");
 Console.ReadLine();
 
