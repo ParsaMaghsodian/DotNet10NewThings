@@ -37,7 +37,7 @@ Console.WriteLine($"letterGarde:{letterGarde}");
 List<int> numbers1 = [1, 2, 3, 4, 5];
 
 
-List<int> numbers2 = [ 6, 7, 8, 9, 10 ];
+List<int> numbers2 = [6, 7, 8, 9, 10];
 
 // Concatenate two enumerables into a single one using the operator extension
 var combinedList = numbers1 + numbers2;
@@ -54,6 +54,17 @@ var savings = new Money("USD", 100);
 var total = cheque + savings;
 total += new Money("USD", 10);
 Console.WriteLine(total);
-int value =Converter.StringToInt("12345");
+int value = Converter.StringToInt("12345");
 Console.WriteLine(value);
+var discounted = new Money("USD", 500).Apply10PercentDiscount();
+Console.WriteLine(discounted);
+
+// Using string as an arbitrary type parameter
+Console.WriteLine(nameof(List<string>));
+// Output: List
+
+// No type parameter (unbounded generic)
+Console.WriteLine(nameof(List<>));
+// Output: List
+
 Console.ReadLine();
