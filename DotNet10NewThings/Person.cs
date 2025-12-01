@@ -11,6 +11,14 @@ public class Person
         get;
         set => field = value ?? throw new ArgumentNullException(nameof(Name));
     }
+
+    //private string _name;
+    //public required string Name
+    //{
+    //    get => _name;
+    //    set => _name = value ?? throw new ArgumentNullException(nameof(Name));
+    //}
+
     public required int Age
     {
         get;
