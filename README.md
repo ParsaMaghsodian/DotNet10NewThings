@@ -43,15 +43,3 @@ This repository targets C# 14 and .NET 10 and contains small examples that demon
 - `Converter.cs` — lambdas with parameter modifiers (`out`).
 - `Money.cs` — primary constructor for a struct and `ref`-parameter delegate usage.
 ```
-
-To commit and push the file from the command line:
-
-- Open the __Git Changes__ window.
-- Stage `README.md` (right-click → Stage or use the stage checkbox).
-- Enter commit message: "Add README documenting C# 14 features demonstrated in repo".
-- Click __Commit Staged__ (or __Commit All__) and then __Push__.
-
-What I changed
-- Added `README.md` documenting the C# 14 language features shown in the repository and where to find examples.
-
-Proceed with the commit above or tell me if you want me to adjust the README text before you commit.
